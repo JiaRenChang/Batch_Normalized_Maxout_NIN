@@ -28,6 +28,7 @@ I added followwing functions:
 for example: a batch normalized maxout layer consist of a convolutional layer, a BN layer, and a maxout layer
 
 "unit1"  is the number of maxout units
+
 "piece1" is the number of maxout pieces
 <blockquote>
 <p>net.layers{end+1} = struct('type', 'conv', ...
