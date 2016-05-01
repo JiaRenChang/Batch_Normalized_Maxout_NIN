@@ -14,8 +14,8 @@ I added followwing functions:
 Maxout units (GPU supported only) 
 Data augmentations (horizontal flipping / pad zeros and random cropping)
 
-<h1>Usage:
-<h2>use maxout units as pooling layers
+<h1>Usage:</h1>
+<h2>use maxout units as pooling layers</h2>
 for example: a batch normalized maxout layer consist of a convolutional layer, a BN layer, and a maxout layer
 "unit1"  is the number of maxout units
 "piece1" is the number of maxout pieces
