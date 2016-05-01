@@ -36,9 +36,9 @@ net.layers{end+1} = struct('type', 'maxout','numunit',unit1,'numpiece',piece1) ;
 
 
 <h2>Data augmentations:</h2>
-add following to your net opts
--> net.meta.trainOpts.augmentation= true;
+<p>add following to your net opts</p>
+<p>-> net.meta.trainOpts.augmentation= true;</p>
 
-Using this implmentation, I achieved 8.13+-0.19% test error without augmentation in CIFAR-10 datasets.
-DATA preprocessing: GCN and Whitening.
+####Using this implmentation, I achieved 8.13+-0.19% test error without augmentation in CIFAR-10 datasets.
+####DATA preprocessing: GCN and Whitening.
 
