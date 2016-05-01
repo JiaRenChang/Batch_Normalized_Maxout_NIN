@@ -6,8 +6,10 @@ This is my implmentation of Batch Normalized Maxout NIN.
 Original Matconvnet: https://github.com/vlfeat/matconvnet
 
 This respository is my modification of Matconvnet.
+
 You can install this modification as same as original installation:
 http://www.vlfeat.org/matconvnet/install/
+
 I used VS2013, CUDA-6.5 and cudnn-v4.
 
 I added followwing functions:
