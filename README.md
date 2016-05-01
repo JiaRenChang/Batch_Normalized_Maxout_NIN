@@ -27,7 +27,7 @@ I added followwing functions:
 ##TO run BN Maxout NIN
 <blockquote>
 After installation, run "\example\cifar\cnn_cifar.m"
-<blockquote>
+</blockquote>
 
 <h2>use maxout units as pooling layers</h2>
 for example: a batch normalized maxout layer consist of a convolutional layer, a BN layer, and a maxout layer
