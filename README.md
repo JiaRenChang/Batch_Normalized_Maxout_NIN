@@ -14,8 +14,8 @@ I added followwing functions:
 Maxout units (GPU supported only) 
 Data augmentations (horizontal flipping / pad zeros and random cropping)
 
-Usage:
-use maxout units as pooling layers
+<h1>Usage:
+<h2>use maxout units as pooling layers
 for example: a batch normalized maxout layer consist of a convolutional layer, a BN layer, and a maxout layer
 "unit1"  is the number of maxout units
 "piece1" is the number of maxout pieces
@@ -34,7 +34,7 @@ net.layers{end+1} = struct('type', 'bnorm', 'name', 'bn2', ...
 net.layers{end+1} = struct('type', 'maxout','numunit',unit1,'numpiece',piece1) ; 
 
 
-Data augmentations:
+<h2>Data augmentations:
 add following to your net opts
 -> net.meta.trainOpts.augmentation= true;
 
