@@ -20,7 +20,7 @@ for example: a batch normalized maxout layer consist of a convolutional layer, a
 
 "unit1"  is the number of maxout units
 "piece1" is the number of maxout pieces
-
+<blockquote>
 net.layers{end+1} = struct('type', 'conv', ...
                            'name', 'maxoutconv1', ...
                            'weights', {{single(orthonorm(1,1,unit0,unit1*piece1)), b*ones(1,unit1*piece1,'single')}}, ...
@@ -33,7 +33,7 @@ net.layers{end+1} = struct('type', 'bnorm', 'name', 'bn2', ...
                            'weights', {{ones(unit1*piece1, 1, 'single'), zeros(unit1*piece1, 1, 'single')}},'learningRate', [1 1 .5],'weightDecay', [0 0]) ;   
 
 net.layers{end+1} = struct('type', 'maxout','numunit',unit1,'numpiece',piece1) ; 
-
+</blockquote>
 
 <h2>Data augmentations:</h2>
 <p>add following to your net opts</p>
