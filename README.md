@@ -12,8 +12,8 @@ I used VS2013, CUDA-6.5 and cudnn-v4.
 
 I added followwing functions:
 <blockquote>
-* Maxout units (GPU supported only) 
-* Data augmentations (horizontal flipping / pad zeros and random cropping)
+<ul>Maxout units (GPU supported only) </ul>
+<ul>Data augmentations (horizontal flipping / pad zeros and random cropping)</ul>
 </blockquote>
 
 <h1>Usage:</h1>
