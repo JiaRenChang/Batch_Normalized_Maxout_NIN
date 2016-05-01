@@ -21,24 +21,25 @@ for example: a batch normalized maxout layer consist of a convolutional layer, a
 "unit1"  is the number of maxout units
 "piece1" is the number of maxout pieces
 <blockquote>
-net.layers{end+1} = struct('type', 'conv', ...
+<p>net.layers{end+1} = struct('type', 'conv', ...
                            'name', 'maxoutconv1', ...
                            'weights', {{single(orthonorm(1,1,unit0,unit1*piece1)), b*ones(1,unit1*piece1,'single')}}, ...
                            'stride', 1, ...
                            'learningRate', [.1 1], ...
                            'weightDecay', [1 0], ...
-                           'pad', 0) ;
+                           'pad', 0) ;</p>
 
-net.layers{end+1} = struct('type', 'bnorm', 'name', 'bn2', ...
-                           'weights', {{ones(unit1*piece1, 1, 'single'), zeros(unit1*piece1, 1, 'single')}},'learningRate', [1 1 .5],'weightDecay', [0 0]) ;   
+<p>net.layers{end+1} = struct('type', 'bnorm', 'name', 'bn2', ...
+                           'weights', {{ones(unit1*piece1, 1, 'single'), zeros(unit1*piece1, 1, 'single')}},'learningRate', [1 1 .5],'weightDecay', [0 0]) ;</p>   
 
-net.layers{end+1} = struct('type', 'maxout','numunit',unit1,'numpiece',piece1) ; 
+<p>net.layers{end+1} = struct('type', 'maxout','numunit',unit1,'numpiece',piece1) ; </p>
 </blockquote>
 
 <h2>Data augmentations:</h2>
+<blockquote>
 <p>add following to your net opts</p>
 <p>-> net.meta.trainOpts.augmentation= true;</p>
-
+</blockquote>
 ####Using this implmentation, I achieved 8.13+-0.19% test error without augmentation in CIFAR-10 datasets.
 ####DATA preprocessing: GCN and Whitening.
 
