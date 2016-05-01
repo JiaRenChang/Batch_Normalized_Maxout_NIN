@@ -11,8 +11,10 @@ http://www.vlfeat.org/matconvnet/install/
 I used VS2013, CUDA-6.5 and cudnn-v4.
 
 I added followwing functions:
-Maxout units (GPU supported only) 
-Data augmentations (horizontal flipping / pad zeros and random cropping)
+<blockquote>
+*Maxout units (GPU supported only) 
+*Data augmentations (horizontal flipping / pad zeros and random cropping)
+</blockquote>
 
 <h1>Usage:</h1>
 <h2>use maxout units as pooling layers</h2>
