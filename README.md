@@ -9,6 +9,11 @@ This respository is my modification of Matconvnet.
 
 You can install this modification as same as original installation:
 http://www.vlfeat.org/matconvnet/install/
+<blockquote>
+vl_compilenn('enableGpu', true, 'cudaMethod', 'nvcc', ...
+'cudaRoot', your-cuda-toolkit\CUDA\v6.5', ...
+'enableCudnn', true, 'cudnnRoot', 'your-cudnn-root\cuda') ;
+</blockquote>
 
 I used VS2013, CUDA-6.5 and cudnn-v4.
 
