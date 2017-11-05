@@ -1,7 +1,7 @@
 # Batch_Normalized_Maxout_NIN
 Paper on arxiv: http://arxiv.org/abs/1511.02583
 
-Paper on ICML visualization workshop: 
+Paper on ICML visualization workshop: https://www.dropbox.com/s/yb03ej5xte8d9gj/ICMLworkshop2016.pdf?dl=0
 
 This is my implmentation of Batch Normalized Maxout NIN.
 
